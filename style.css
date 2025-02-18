@@ -1,53 +1,64 @@
-/* General styling */
+/* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('background.jpg') no-repeat center center/cover;
-    color: white;
-}
-
-/* Container styling */
-.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Main Container */
+.container {
     text-align: center;
 }
 
-/* Transparent box styling with improved blending */
+/* Logo Styling */
+.logo {
+    width: 100px;
+    margin-bottom: 15px;
+    opacity: 0.6; /* Increased transparency for better blending */
+}
+
+/* Transparent Box */
 .box {
-    background: rgba(0, 0, 0, 0.15); /* More transparency for subtle effect */
+    background: rgba(0, 0, 0, 0.15); /* Lighter transparency for smooth effect */
     border-radius: 10px;
     padding: 20px;
     color: white;
-    backdrop-filter: blur(8px); /* Enhanced blur for smooth integration */
+    backdrop-filter: blur(8px); /* Enhances blending with background */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     max-width: 80%;
 }
 
-/* Logo styling with slight transparency */
-.logo {
-    width: 80px;
-    margin-bottom: 15px;
-    opacity: 0.6; /* More transparency to blend with the background */
+/* Heading Styles */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
 }
 
+/* Paragraph Styles */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
 
-/* Button styling */
+/* Button Styling */
 .button {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 15px;
-    background-color: #d48a4b;
+    background-color: #a5673f;
     color: white;
+    font-size: 16px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease-in-out;
 }
 
 .button:hover {
-    background-color: #b36d3d;
+    background-color: #8d5632;
 }
