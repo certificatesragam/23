@@ -16,23 +16,24 @@ body {
     text-align: center;
 }
 
-/* Transparent box styling */
+/* Transparent box styling with improved blending */
 .box {
-    background: rgba(0, 0, 0, 0.3); /* Adjusted transparency */
+    background: rgba(0, 0, 0, 0.15); /* More transparency for subtle effect */
     border-radius: 10px;
     padding: 20px;
     color: white;
-    backdrop-filter: blur(5px); /* Soft blur effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px); /* Enhanced blur for smooth integration */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     max-width: 80%;
 }
 
-/* Logo styling */
+/* Logo styling with slight transparency */
 .logo {
     width: 80px;
     margin-bottom: 15px;
-    opacity: 0.8; /* Slight transparency for matching effect */
+    opacity: 0.6; /* More transparency to blend with the background */
 }
+
 
 /* Button styling */
 .button {
