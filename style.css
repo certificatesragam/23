@@ -1,4 +1,4 @@
-/* Reset default styles */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,66 +8,65 @@
 
 /* Background Styling */
 body {
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: url('background.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
 }
 
-/* Centered Content */
+/* Certificate Container */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
 }
 
-/* Transparent Box */
-.box {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 20px;
+/* Certificate Card */
+.certificate-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
-    width: 90%;
-    max-width: 400px;
     color: white;
-    backdrop-filter: blur(5px);
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Logo */
+/* Logo Styling */
 .logo {
-    width: 60px;
+    width: 80px;
     margin-bottom: 15px;
 }
 
-/* Headings */
+/* Heading */
 h1 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* Text */
-p {
-    font-size: 14px;
+/* Certificate Text */
+.certificate-text {
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
-/* Python Button */
-.button {
+/* Download Button */
+.download-btn {
     display: inline-block;
-    background-color: #c57b37;
+    background: #D38D4B;
     color: white;
     padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
     transition: 0.3s;
 }
 
-.button:hover {
-    background-color: #a86329;
+.download-btn:hover {
+    background: #b3743f;
 }
