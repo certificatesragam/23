@@ -1,39 +1,52 @@
+/* General styling */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center/cover;
     color: white;
+}
+
+/* Container styling */
+.container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    text-align: center;
 }
 
-.certificate-box {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+/* Transparent box styling */
+.box {
+    background: rgba(0, 0, 0, 0.3); /* Adjusted transparency */
     border-radius: 10px;
-    width: 80%;
-    max-width: 500px;
-}
-
-.logo {
-    width: 50px;
-    margin-bottom: 10px;
-}
-
-.button {
-    background-color: #d6923b;
+    padding: 20px;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    margin-top: 10px;
+    backdrop-filter: blur(5px); /* Soft blur effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+}
+
+/* Logo styling */
+.logo {
+    width: 80px;
+    margin-bottom: 15px;
+    opacity: 0.8; /* Slight transparency for matching effect */
+}
+
+/* Button styling */
+.button {
     display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #d48a4b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #b36d3d;
 }
